@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Unplug &raquo; Dashboard</title>
+    <link rel="stylesheet" href="file:///android_asset/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="file:///android_asset/bootstrap/css/bootstrap-flatly.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class='container unplug-logo'>
+      <div clas='row' style='margin-top:50%'>
+        <div class='col-md-2'></div>
+        <div class='col-md-8' style='text-align:center'>
+          <p><i class="fa fa-plug" aria-hidden="true"></i><span id='unplug-text'>nplug</span>   </p>
+        </div>
+        <div class='col-md-2'></div>
+      </div>
+    </div>
+    <div class="container appliances">
+      
+        <p class='logo'><i class="fa fa-plug" aria-hidden="true"></i><span class='unplug-text'>nplug</span>   </p>
+        <p class='text-primary' style='text-align:center;'>
+          The <span class='text-danger'>Vampire Load</span> is silently sucking money out of your pocket without you knowing it!
+          <br/> Turn these appliances off and see how much you can save.
+          <br/><small>Click
+            <a href='file:///android_asset/load_table.html'>here</a> to learn more about
+            <a href='#' data-toggle="modal" data-target="#myModal">standby power consumption</a> of each appliances and why you should care.</small>
+          <br/>
+            <small> <a href='file:///android_asset/scheduler.html'>Unplug Scheduler</a> </small>
+        </p>
+        <div class='row' id='tv'>
+          <div class='col-md-2 switch'>
+            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+          </div>
+          <div class='col-md-8 appliance-detail'>
+            <span class='appliance-name'>Television</span>
+            <span class='appliance-phantom-load'>5.99 W / hour </span>
+            <span class='appliance-savings' data-watts='5.99'></span>
+          </div>
+        </div>
+
+        <div class='row' id='ac'>
+          <div class='col-md-2 switch'>
+            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+          </div>
+          <div class='col-md-8 appliance-detail'>
+            <span class='appliance-name'>1.5HP Air Conditioning Unit</span>
+            <span class='appliance-phantom-load'>0.9 W /hour %</span>
+            <span class='appliance-savings' data-watts='0.9'></span>
+          </div>
+        </div>
+       <div class='row off' id='fan'>
+          <div class='col-md-2 switch'>
+            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+          </div>
+          <div class='col-md-8 appliance-detail'>
+            <span class='appliance-name'>Computer (notebook)</span>
+            <span class='appliance-phantom-load'>8.9 W / h</span>
+            <span class='appliance-savings' data-watts='8.9'>PLC</span>
+          </div>
+        </div>
+        
+        <div class='row off' id='wm'>
+          <div class='col-md-2 switch'>
+            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+          </div>
+          <div class='col-md-8 appliance-detail'>
+            <span class='appliance-name'>Fully Automatic Washing Machine</span>
+            <span class='appliance-phantom-load'>-- </span>
+            <span class='appliance-savings' data-watts='6.97'>PLC</span>
+          </div>
+        </div>
+        
+        <div class='row off' id='mw'>
+          <div class='col-md-2 switch'>
+            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+          </div>
+          <div class='col-md-8 appliance-detail'>
+            <span class='appliance-name'>Microwave Oven</span>
+            <span class='appliance-phantom-load'>-- </span>
+            <span class='appliance-savings' data-watts='6.97'>PLC</span>
+          </div>
+        </div>
+
+        
+     </div><!-- /.container -->
+
+     <!-- Modal -->
+  <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Why should I care?</h4>
+        </div>
+        <div class="modal-body modal-success">
+          <p> 
+            The total power consumed may be small, but imagine if we sum up the consumption of <strong>Millions</strong> of Meralco subscribers.
+
+          </p>
+          <p class='text-warning'>
+            6.97 watts  x 24 hours x 365 days x 1 Million estimated customers
+          </p>
+
+          <h1 class='text-danger' style='text-align:center'>
+             61 MegaWatts! <br><small>[61,057,200]</small>
+          </h1>
+          <h4 class='text-info'>
+             If 1 MW can power 1,000 homes, that's 61,000 more homes!
+          </h4>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="file:///android_asset/bootstrap/js/jquery.min.js"></script>
+    <script src="file:///android_asset/bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      .appliances .row {
+        background-color: #00a65a;
+        transition: background-color 0.5s ease;  
+        border-bottom: 1px solid #eee;
+        margin-bottom:10px;
+      }
+      /*default switch state is on*/
+      .appliances .row .switch{        
+        width:90px;
+        height: 90px;
+        background: rgba(0,0,0,0.2);
+        float:left;
+        display: inline-block;
+        cursor: pointer;
+        
+      }
+      .appliances .row.off {
+        background-color: #828E76;
+        color:;
+      }
+          
+
+      .appliances .row .switch span {
+        color:white;
+        font-size:34px;
+        margin:40% 20%;
+      }
+      .appliances .row .appliance-detail{
+        padding: 8px;
+        margin-left: 12px;
+        float:left;
+      }
+      .appliances .row .appliance-detail span {
+        color:white;
+        display: block;
+      }
+      span.appliance-name {
+        text-transform: uppercase;
+        font-size:12px;
+      }
+      span.appliance-phantom-load{
+        font-weight: bold;
+        font-size:17px;
+      }
+      span.appliance-savings{
+        margin-top:8px;
+        border-top:1px solid #fff;
+      }
+      body,.container{
+        background-color:#CCC8C8;
+      }
+      #unplug-text{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size:100px;
+
+      }
+      .fa.fa-plug{
+        font-size: 70px;
+      }
+
+      
+      p.logo {
+        text-align:center;
+      }
+      .logo span.unplug-text{
+        font-size:40px;
+      }
+      p.logo i.fa.fa-plug{
+        font-size: 30px;
+      }
+      .appliances {
+        display:none;
+      }
+    </style>
+    <script type="text/javascript">
+      //animate, save state, send sms...
+
+      $(document).ready(function(){
+        var canPersist = typeof(Storage) !== "undefined";
+        $(".switch").on('click',function(){
+          var appliance_id = $(this).parents('.row').attr('id');
+          $(this).parents(".row").toggleClass('off');
+          var state = $($(this).parents('.row')).hasClass('off') ? 'off' : 'on';
+
+          Android.sendSMS(appliance_id + " "+ state);
+          //store the state of this appliance
+          if (canPersist) {
+            localStorage.setItem(appliance_id, state);
+          }
+        });
+
+        //restore the original state of the appliance
+        $(".appliances .row").each(function(i,el){
+          if(canPersist){
+            var state = localStorage.getItem($(el).attr('id'));
+            if(state == 'off'){
+              $(el).addClass(state);
+            }
+          }
+        });
+
+        setTimeout(function(){
+          $(".unplug-logo").fadeOut('slow',function(){
+            $(this).css('display','none');
+
+            $(".appliances").fadeIn('slow');
+          })
+        },3000);
+
+        //compute the vamp load consumption, in pesos
+        ((6.97  * 24 * 365 ) / 1000 ) / 8.32
+        $(".appliance-savings").each(function(i,el){
+          var load = parseFloat($(el).data('watts'));
+
+          var vampire_load = ((load  * 24 * 365 ) / 1000 ) * 8.32;
+
+          $(el).html('<small>Vampire load per Year: ' + Math.ceil(((load  * 24 * 365 ) / 1000 ),2) + " kwh | Php "+  Math.round(vampire_load,2) +"</small>" );
+
+
+        });
+  
+
+      });
+
+    </script>
+
+  </body>
+</html>

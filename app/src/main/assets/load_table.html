@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Unplug &raquo; Dashboard</title>
+    <link rel="stylesheet" href="file:///android_asset/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="file:///android_asset/bootstrap/css/bootstrap-flatly.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class='container unplug-logo'>
+      <div clas='row' >
+        <div class='col-md-2'></div>
+        <div class='col-md-8' style='text-align:center'>
+          <p><i class="fa fa-plug" aria-hidden="true"></i><span id='unplug-text'>nplug</span>   </p>
+        </div>
+        <div class='col-md-2'></div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='col-md-12'>
+        <p class='text-primary' style='    background: white;    padding: 8px;'>
+        We measured the standby power of many, many, products. The table below summarizes those measurements, with the average, minimum, and maximum power levels observed while in standby. Power consumption is listed in "watts" (W). See the FAQs for a detailed explanation. The "Count" refers to the number of products that we measured.
+          
+        </p>
+        <div align='right'><small>source <a href="http://standby.lbl.gov/summary-table.html">standby.lbl.gov</a></small></div>
+        <table class="table table-bordered table-condensed" cellspacing="0" summary="Minimum, mean and maximum standby power consumption values for residential appliances.">
+          <tbody><tr>
+            <th>Product/Mode</th>
+            <th>Average (W)</th>
+            <th>Min (W)</th>
+            <th>Max (W)</th>
+            <th class="last-col">Count</th>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Air Conditioner, room/wall</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>0.9</td>
+            <td>0.9</td>
+            <td>0.9</td>
+            <td class="last-col">1</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Charger, mobile phone</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, charged</td>
+            <td>2.24</td>
+            <td>0.75</td>
+            <td>4.11</td>
+            <td class="last-col">4</td>
+          </tr>
+          <tr>
+            <td class="align-left">On, charging</td>
+            <td>3.68</td>
+            <td>0.27</td>
+            <td>7.5</td>
+            <td class="last-col">23</td>
+          </tr>
+          <tr>
+            <td class="align-left">Power supply only</td>
+            <td>0.26</td>
+            <td>0.02</td>
+            <td>1</td>
+            <td class="last-col">32</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Clock, radio</th>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>2.01</td>
+            <td>0.97</td>
+            <td>7.6</td>
+            <td class="last-col">23</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Computer Display, CRT</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>0.8</td>
+            <td>0</td>
+            <td>2.99</td>
+            <td class="last-col">21</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>65.1</td>
+            <td>34.54</td>
+            <td>124.78</td>
+            <td class="last-col">21</td>
+          </tr>
+          <tr>
+            <td class="align-left">Sleep</td>
+            <td>12.14</td>
+            <td>1.6</td>
+            <td>74.5</td>
+            <td class="last-col">14</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Computer Display, LCD</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.13</td>
+            <td>0.31</td>
+            <td>3.5</td>
+            <td class="last-col">32</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>27.61</td>
+            <td>1.9</td>
+            <td>55.48</td>
+            <td class="last-col">31</td>
+          </tr>
+          <tr>
+            <td class="align-left">Sleep</td>
+            <td>1.38</td>
+            <td>0.37</td>
+            <td>7.8</td>
+            <td class="last-col">30</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Computer, desktop</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, idle</td>
+            <td>73.97</td>
+            <td>27.5</td>
+            <td>180.83</td>
+            <td class="last-col">63</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>2.84</td>
+            <td>0</td>
+            <td>9.21</td>
+            <td class="last-col">64</td>
+          </tr>
+          <tr>
+            <td class="align-left">Sleep</td>
+            <td>21.13</td>
+            <td>1.1</td>
+            <td>83.3</td>
+            <td class="last-col">52</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Computer, notebook</th>
+          </tr>
+          <tr>
+            <td class="align-left">Fully on, charged</td>
+            <td>29.48</td>
+            <td>14.95</td>
+            <td>73.1</td>
+            <td class="last-col">13</td>
+          </tr>
+          <tr>
+            <td class="align-left">Fully on, charging</td>
+            <td>44.28</td>
+            <td>27.38</td>
+            <td>66.9</td>
+            <td class="last-col">8</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>8.9</td>
+            <td>0.47</td>
+            <td>50</td>
+            <td class="last-col">19</td>
+          </tr>
+          <tr>
+            <td class="align-left">Power supply only</td>
+            <td>4.42</td>
+            <td>0.15</td>
+            <td>26.4</td>
+            <td class="last-col">19</td>
+          </tr>
+          <tr>
+            <td class="align-left">Sleep</td>
+            <td>15.77</td>
+            <td>0.82</td>
+            <td>54.8</td>
+            <td class="last-col">16</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Fax, inkjet</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>5.31</td>
+            <td>0</td>
+            <td>8.72</td>
+            <td class="last-col">3</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>6.22</td>
+            <td>2.89</td>
+            <td>14</td>
+            <td class="last-col">8</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Fax, laser</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="last-col">1</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>6.1</td>
+            <td>6.1</td>
+            <td>6.1</td>
+            <td class="last-col">1</td>
+          </tr>
+          <tr>
+            <td class="align-left">Ready</td>
+            <td>6.42</td>
+            <td>6.42</td>
+            <td>6.42</td>
+            <td class="last-col">1</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Heating, furnace central</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>4.21</td>
+            <td>0</td>
+            <td>9.8</td>
+            <td class="last-col">16</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>339.71</td>
+            <td>70.5</td>
+            <td>796</td>
+            <td class="last-col">14</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Hub, USB</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.44</td>
+            <td>0.95</td>
+            <td>1.81</td>
+            <td class="last-col">5</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>2.06</td>
+            <td>1.06</td>
+            <td>3.55</td>
+            <td class="last-col">7</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Modem, DSL</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.37</td>
+            <td>0.33</td>
+            <td>2.02</td>
+            <td class="last-col">16</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>5.37</td>
+            <td>3.38</td>
+            <td>8.22</td>
+            <td class="last-col">20</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Modem, cable</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>3.84</td>
+            <td>1.57</td>
+            <td>6.62</td>
+            <td class="last-col">8</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>6.25</td>
+            <td>3.64</td>
+            <td>8.62</td>
+            <td class="last-col">16</td>
+          </tr>
+          <tr>
+            <td class="align-left">Standby</td>
+            <td>3.85</td>
+            <td>3.59</td>
+            <td>4.11</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Multi-function Device, inkjet</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>5.26</td>
+            <td>0</td>
+            <td>10.03</td>
+            <td class="last-col">23</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>9.16</td>
+            <td>3.9</td>
+            <td>17.7</td>
+            <td class="last-col">24</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Multi-function Device, laser</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>3.12</td>
+            <td>0</td>
+            <td>4.7</td>
+            <td class="last-col">3</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>49.68</td>
+            <td>5</td>
+            <td>175</td>
+            <td class="last-col">4</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Night Light, interior</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>0.05</td>
+            <td>0</td>
+            <td>0.34</td>
+            <td class="last-col">10</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>4.47</td>
+            <td>0</td>
+            <td>27.97</td>
+            <td class="last-col">19</td>
+          </tr>
+          <tr>
+            <td class="align-left">Ready</td>
+            <td>0.22</td>
+            <td>0</td>
+            <td>1.2</td>
+            <td class="last-col">8</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Phone, cordless</th>
+          </tr>
+          <tr>
+            <td class="align-left">Ready, handset</td>
+            <td>2.81</td>
+            <td>1.05</td>
+            <td>4.89</td>
+            <td class="last-col">35</td>
+          </tr>
+          <tr>
+            <td class="align-left">Ready, no handset</td>
+            <td>1.58</td>
+            <td>0.59</td>
+            <td>3.09</td>
+            <td class="last-col">35</td>
+          </tr>
+          <tr>
+            <td class="align-left">Active (talking)</td>
+            <td>1.9</td>
+            <td>0.59</td>
+            <td>3.38</td>
+            <td class="last-col">33</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>0.98</td>
+            <td>0.54</td>
+            <td>1.8</td>
+            <td class="last-col">10</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Phone, cordless with answering machine</th>
+          </tr>
+          <tr>
+            <td class="align-left">Ready, handset</td>
+            <td>4</td>
+            <td>2.15</td>
+            <td>7.4</td>
+            <td class="last-col">20</td>
+          </tr>
+          <tr>
+            <td class="align-left">Ready, no handset</td>
+            <td>2.82</td>
+            <td>1.72</td>
+            <td>4.7</td>
+            <td class="last-col">20</td>
+          </tr>
+          <tr>
+            <td class="align-left">Active (talking)</td>
+            <td>3.53</td>
+            <td>2.2</td>
+            <td>6.5</td>
+            <td class="last-col">21</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>2.92</td>
+            <td>0.9</td>
+            <td>7.4</td>
+            <td class="last-col">11</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Power Tool, cordless</th>
+          </tr>
+          <tr>
+            <td class="align-left">Ready, charged</td>
+            <td>8.34</td>
+            <td>1.82</td>
+            <td>14</td>
+            <td class="last-col">5</td>
+          </tr>
+          <tr>
+            <td class="align-left">Active</td>
+            <td>29.53</td>
+            <td>1.39</td>
+            <td>66</td>
+            <td class="last-col">16</td>
+          </tr>
+          <tr>
+            <td class="align-left">Ready</td>
+            <td>1.74</td>
+            <td>0</td>
+            <td>4.7</td>
+            <td class="last-col">23</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Printer, inkjet</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.26</td>
+            <td>0</td>
+            <td>4</td>
+            <td class="last-col">25</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>4.93</td>
+            <td>1.81</td>
+            <td>22</td>
+            <td class="last-col">25</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Printer, laser</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.58</td>
+            <td>0</td>
+            <td>4.5</td>
+            <td class="last-col">7</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>131.07</td>
+            <td>1.7</td>
+            <td>481.9</td>
+            <td class="last-col">5</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Range, gas</th>
+          </tr>
+          <tr>
+            <td class="align-left">Ready</td>
+            <td>1.13</td>
+            <td>0.7</td>
+            <td>1.7</td>
+            <td class="last-col">4</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Scanner, flatbed</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>2.48</td>
+            <td>0.27</td>
+            <td>8.2</td>
+            <td class="last-col">6</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>9.6</td>
+            <td>1.71</td>
+            <td>15.6</td>
+            <td class="last-col">10</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Security Systems, home</th>
+          </tr>
+          <tr>
+            <td class="align-left">Ready</td>
+            <td>2.7</td>
+            <td>2.7</td>
+            <td>2.7</td>
+            <td class="last-col">1</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Set-top Box, DVR</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, no recording</td>
+            <td>37.64</td>
+            <td>25.95</td>
+            <td>49.2</td>
+            <td class="last-col">4</td>
+          </tr>
+          <tr>
+            <td class="align-left">On, recording</td>
+            <td>29.29</td>
+            <td>27.27</td>
+            <td>31.3</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>36.68</td>
+            <td>23.3</td>
+            <td>48.6</td>
+            <td class="last-col">4</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Set-top Box, digital cable with DVR</th>
+          </tr>
+          <tr>
+            <td class="align-left">Not recording, TV off</td>
+            <td>44.63</td>
+            <td>44.38</td>
+            <td>44.87</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <td class="align-left">Not recording, TV on</td>
+            <td>44.4</td>
+            <td>44.2</td>
+            <td>44.6</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off by remote</td>
+            <td>43.46</td>
+            <td>43.3</td>
+            <td>43.61</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Set-top Box, digital cable</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, TV off</td>
+            <td>24.65</td>
+            <td>14.2</td>
+            <td>74.74</td>
+            <td class="last-col">18</td>
+          </tr>
+          <tr>
+            <td class="align-left">On, TV on</td>
+            <td>29.64</td>
+            <td>14.1</td>
+            <td>102.23</td>
+            <td class="last-col">18</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off by remote</td>
+            <td>17.83</td>
+            <td>13.24</td>
+            <td>30.6</td>
+            <td class="last-col">14</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off by switch</td>
+            <td>17.5</td>
+            <td>13.7</td>
+            <td>26.3</td>
+            <td class="last-col">16</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Set-top Box, satellite with DVR</th>
+          </tr>
+          <tr>
+            <td class="align-left">Not recording, TV off</td>
+            <td>28.35</td>
+            <td>25.8</td>
+            <td>30.9</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <td class="align-left">Not recording, TV on</td>
+            <td>31.37</td>
+            <td>24.2</td>
+            <td>36.3</td>
+            <td class="last-col">3</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off by remote</td>
+            <td>27.8</td>
+            <td>22</td>
+            <td>33.6</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Set-top Box, satellite</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, TV off</td>
+            <td>15.95</td>
+            <td>7.69</td>
+            <td>33.2</td>
+            <td class="last-col">33</td>
+          </tr>
+          <tr>
+            <td class="align-left">On, TV on</td>
+            <td>16.15</td>
+            <td>7.69</td>
+            <td>33.2</td>
+            <td class="last-col">33</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off by remote</td>
+            <td>15.66</td>
+            <td>6.58</td>
+            <td>33.05</td>
+            <td class="last-col">25</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off by switch</td>
+            <td>15.47</td>
+            <td>6.58</td>
+            <td>32.7</td>
+            <td class="last-col">31</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Speakers, computer</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, no sound</td>
+            <td>4.12</td>
+            <td>0.69</td>
+            <td>9.84</td>
+            <td class="last-col">21</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.79</td>
+            <td>0</td>
+            <td>5.6</td>
+            <td class="last-col">19</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Stereo, portable</th>
+          </tr>
+          <tr>
+            <td class="align-left">CD, not playing</td>
+            <td>4.11</td>
+            <td>1.29</td>
+            <td>6.83</td>
+            <td class="last-col">15</td>
+          </tr>
+          <tr>
+            <td class="align-left">Cassette, not playing</td>
+            <td>2.42</td>
+            <td>1.16</td>
+            <td>5.92</td>
+            <td class="last-col">13</td>
+          </tr>
+          <tr>
+            <td class="align-left">CD playing</td>
+            <td>6.8</td>
+            <td>3.96</td>
+            <td>9.2</td>
+            <td class="last-col">15</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.66</td>
+            <td>0.7</td>
+            <td>5.44</td>
+            <td class="last-col">19</td>
+          </tr>
+          <tr>
+            <td class="align-left">Radio playing</td>
+            <td>3.3</td>
+            <td>1.36</td>
+            <td>8.25</td>
+            <td class="last-col">20</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Television, CRT</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off by remote</td>
+            <td>3.06</td>
+            <td>0.3</td>
+            <td>10.34</td>
+            <td class="last-col">38</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off by switch</td>
+            <td>2.88</td>
+            <td>0</td>
+            <td>16.1</td>
+            <td class="last-col">58</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Television, rear projection</th>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>186.09</td>
+            <td>186.09</td>
+            <td>186.09</td>
+            <td class="last-col">1</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off by remote</td>
+            <td>6.97</td>
+            <td>0.2</td>
+            <td>48.5</td>
+            <td class="last-col">16</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off by switch</td>
+            <td>6.6</td>
+            <td>0.2</td>
+            <td>48.5</td>
+            <td class="last-col">15</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Timer, irrigation</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>2.75</td>
+            <td>1.5</td>
+            <td>5.9</td>
+            <td class="last-col">14</td>
+          </tr>
+          <tr>
+            <td class="align-left">Ready</td>
+            <td>2.84</td>
+            <td>1.5</td>
+            <td>5.9</td>
+            <td class="last-col">16</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Tuner, AM/FM</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, not playing</td>
+            <td>9.48</td>
+            <td>5.08</td>
+            <td>16.4</td>
+            <td class="last-col">3</td>
+          </tr>
+          <tr>
+            <td class="align-left">On, playing</td>
+            <td>9.92</td>
+            <td>5.07</td>
+            <td>17.7</td>
+            <td class="last-col">3</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.12</td>
+            <td>0</td>
+            <td>3.37</td>
+            <td class="last-col">3</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Amplifier</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, not playing</td>
+            <td>33.99</td>
+            <td>21.4</td>
+            <td>70.93</td>
+            <td class="last-col">6</td>
+          </tr>
+          <tr>
+            <td class="align-left">On, playing</td>
+            <td>39.16</td>
+            <td>21.11</td>
+            <td>69.3</td>
+            <td class="last-col">6</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>0.27</td>
+            <td>0</td>
+            <td>1.8</td>
+            <td class="last-col">7</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Audio Minisystem</th>
+          </tr>
+          <tr>
+            <td class="align-left">CD, not playing</td>
+            <td>13.99</td>
+            <td>1.67</td>
+            <td>36.95</td>
+            <td class="last-col">28</td>
+          </tr>
+          <tr>
+            <td class="align-left">Cassette, not playing</td>
+            <td>13.85</td>
+            <td>1.67</td>
+            <td>33.14</td>
+            <td class="last-col">24</td>
+          </tr>
+          <tr>
+            <td class="align-left">CD playing</td>
+            <td>19.09</td>
+            <td>5.2</td>
+            <td>41.2</td>
+            <td class="last-col">24</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>8.32</td>
+            <td>0.3</td>
+            <td>24.58</td>
+            <td class="last-col">27</td>
+          </tr>
+          <tr>
+            <td class="align-left">Radio playing</td>
+            <td>14.41</td>
+            <td>2.98</td>
+            <td>38</td>
+            <td class="last-col">28</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">CD Player</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, not playing</td>
+            <td>8.62</td>
+            <td>4</td>
+            <td>25.7</td>
+            <td class="last-col">7</td>
+          </tr>
+          <tr>
+            <td class="align-left">On, playing</td>
+            <td>9.91</td>
+            <td>5.8</td>
+            <td>25.6</td>
+            <td class="last-col">7</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>5.04</td>
+            <td>2</td>
+            <td>18.4</td>
+            <td class="last-col">7</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Caller ID Unit</th>
+          </tr>
+          <tr>
+            <td class="align-left">Ready</td>
+            <td>1.27</td>
+            <td>1.27</td>
+            <td>1.27</td>
+            <td class="last-col">1</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Cassette Deck</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, not playing</td>
+            <td>4.53</td>
+            <td>4.36</td>
+            <td>4.7</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <td class="align-left">On, playing</td>
+            <td>5.72</td>
+            <td>5.2</td>
+            <td>6.25</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>0.54</td>
+            <td>0</td>
+            <td>1.08</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Clock</th>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>1.74</td>
+            <td>0.99</td>
+            <td>3.61</td>
+            <td class="last-col">21</td>
+          </tr>
+          <tr>
+            <td class="align-left">Radio playing</td>
+            <td>2.95</td>
+            <td>1.7</td>
+            <td>4.2</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Coffee Maker</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.14</td>
+            <td>0</td>
+            <td>2.7</td>
+            <td class="last-col">12</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Copier</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.49</td>
+            <td>0</td>
+            <td>2.97</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>9.63</td>
+            <td>3.6</td>
+            <td>14</td>
+            <td class="last-col">3</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">DVD Recorder</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>0.75</td>
+            <td>0</td>
+            <td>1.5</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">DVD Player</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, not playing</td>
+            <td>7.54</td>
+            <td>0.24</td>
+            <td>12.7</td>
+            <td class="last-col">33</td>
+          </tr>
+          <tr>
+            <td class="align-left">On, playing</td>
+            <td>9.91</td>
+            <td>5.28</td>
+            <td>17.17</td>
+            <td class="last-col">33</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.55</td>
+            <td>0</td>
+            <td>10.58</td>
+            <td class="last-col">33</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">DVD/VCR</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, not playing</td>
+            <td>13.51</td>
+            <td>8.48</td>
+            <td>20.5</td>
+            <td class="last-col">21</td>
+          </tr>
+          <tr>
+            <td class="align-left">On, playing</td>
+            <td>15.33</td>
+            <td>9.43</td>
+            <td>22.37</td>
+            <td class="last-col">19</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>5.04</td>
+            <td>0.09</td>
+            <td>12.7</td>
+            <td class="last-col">21</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Game Console</th>
+          </tr>
+          <tr>
+            <td class="align-left">Active</td>
+            <td>26.98</td>
+            <td>5.4</td>
+            <td>67.68</td>
+            <td class="last-col">24</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.01</td>
+            <td>0</td>
+            <td>2.13</td>
+            <td class="last-col">26</td>
+          </tr>
+          <tr>
+            <td class="align-left">Ready</td>
+            <td>23.34</td>
+            <td>2.12</td>
+            <td>63.74</td>
+            <td class="last-col">24</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Garage Door Opener</th>
+          </tr>
+          <tr>
+            <td class="align-left">Ready</td>
+            <td>4.48</td>
+            <td>1.8</td>
+            <td>7.3</td>
+            <td class="last-col">34</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Low-voltage Landscape</th>
+          </tr>
+          <tr>
+            <td class="align-left">Ready</td>
+            <td>1.13</td>
+            <td>1.1</td>
+            <td>1.17</td>
+            <td class="last-col">2</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Microwave Ovens</th>
+          </tr>
+          <tr>
+            <td class="align-left">Ready, door closed</td>
+            <td>3.08</td>
+            <td>1.4</td>
+            <td>4.9</td>
+            <td class="last-col">18</td>
+          </tr>
+          <tr>
+            <td class="align-left">Ready, door open</td>
+            <td>25.79</td>
+            <td>1.6</td>
+            <td>39</td>
+            <td class="last-col">17</td>
+          </tr>
+          <tr>
+            <td class="align-left">Cooking</td>
+            <td>1433.</td>
+            <td>966.2</td>
+            <td>1723.</td>
+            <td class="last-col">18</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Musical Instruments</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>2.82</td>
+            <td>1.2</td>
+            <td>4.2</td>
+            <td class="last-col">9</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Receiver (audio)</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, not playing</td>
+            <td>37.61</td>
+            <td>17.1</td>
+            <td>65.2</td>
+            <td class="last-col">18</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>2.92</td>
+            <td>0</td>
+            <td>19.7</td>
+            <td class="last-col">18</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Subwoofer</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, not playing</td>
+            <td>10.7</td>
+            <td>5.8</td>
+            <td>20.6</td>
+            <td class="last-col">7</td>
+          </tr>
+          <tr>
+            <td class="align-left">On, playing</td>
+            <td>12.42</td>
+            <td>5.9</td>
+            <td>20.6</td>
+            <td class="last-col">6</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Surge Protector</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>1.05</td>
+            <td>0</td>
+            <td>6.3</td>
+            <td class="last-col">6</td>
+          </tr>
+          <tr>
+            <td class="align-left">On</td>
+            <td>0.8</td>
+            <td>0</td>
+            <td>6.92</td>
+            <td class="last-col">43</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Telephone Answering Device</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>2.01</td>
+            <td>1.31</td>
+            <td>2.55</td>
+            <td class="last-col">7</td>
+          </tr>
+          <tr>
+            <td class="align-left">Ready</td>
+            <td>2.25</td>
+            <td>1.42</td>
+            <td>2.83</td>
+            <td class="last-col">7</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Television/VCR</th>
+          </tr>
+          <tr>
+            <td class="align-left">Off by remote</td>
+            <td>5.15</td>
+            <td>2.15</td>
+            <td>13.3</td>
+            <td class="last-col">6</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off by switch</td>
+            <td>5.99</td>
+            <td>2.15</td>
+            <td>13.11</td>
+            <td class="last-col">7</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">Turntable (audio)</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, not playing</td>
+            <td>6.01</td>
+            <td>1.72</td>
+            <td>12.8</td>
+            <td class="last-col">3</td>
+          </tr>
+          <tr>
+            <td class="align-left">Off</td>
+            <td>0.2</td>
+            <td>0</td>
+            <td>0.6</td>
+            <td class="last-col">3</td>
+          </tr>
+          <tr>
+            <th class="align-left last-col" colspan="5">VCR</th>
+          </tr>
+          <tr>
+            <td class="align-left">On, not playing</td>
+            <td>7.77</td>
+            <td>3.8</td>
+            <td>11.62</td>
+            <td class="last-col">14</td>
+          </tr>
+          <tr class="last-row">
+            <td class="align-left">Off</td>
+            <td>4.68071</td>
+            <td>1.2</td>
+            <td>9.9</td>
+            <td class="last-col">14</td>
+          </tr>
+        </tbody></table>
+      </div>
+    </div>
+
+
+
+
+
+
+    <style type="text/css">
+      body{
+        background-color:#CCC8C8;
+      }
+
+      #unplug-text,.unplug-text{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size:40px;
+      }
+      .fa.fa-plug{
+        font-size: 30px;
+      }
+
+      
+      p.logo {
+        text-align:center;
+      }
+      .logo span.unplug-text{
+        font-size:40px;
+      }
+      p.logo i.fa.fa-plug{
+        font-size: 30px;
+      }
+    </style>
+
+  </body>
+</html>

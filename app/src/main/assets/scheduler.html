@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Unplug &raquo; Scheduler</title>
+
+    <link href="file:///android_asset/bootstrap/css/bootstrap-flatly.min.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      
+
+      <div class='col-md-12'>
+       <form class='form-horizontal'>
+          <h2>Unplug Scheduler</h2>
+          <div class="form-group appliances" >
+            <label for="appliances" class='col-sm-3' >Unplug these appliances</label>
+            <div class='col-sm-8'>
+              <button class='btn btn-sm btn-default'>Television</button>
+              <button class='btn btn-sm btn-default'>Air Conditioning Unit</button>
+              <button class='btn btn-sm btn-default'>Electric Fan</button>
+              <button class='btn btn-sm btn-default'>Microwave Oven</button>
+              <button class='btn btn-sm btn-default'>Electric Pot</button>
+            </div>
+          </div>
+          <div class="form-group ">
+            <label for="date" class='col-sm-3'>On this date</label>
+            <div class='col-sm-8'>
+              <input type="date" class="form-control" name='date' placeholder="on this Date">
+            </div>
+          </div>
+          <div class="form-group ">
+            <label for="time" class='col-sm-3'>At this Time</label>
+            <div class='col-sm-8'>
+            <input type="time" name='time'>            
+            </div>
+          </div>
+          <div class="form-group">
+            <div class='col-sm-3'></div>
+            <div class="checkbox col-sm-8">
+              <label>
+                <input type="checkbox" name='notify'>Notify me when these devices are turned off 
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class='col-sm-3'></div>
+            <div class="checkbox col-sm-8">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+      
+        
+        
+     </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="file:///home/rvb/Documents/HackTheClimate/htc/bootstrap/js/jquery.min.js"></script>
+    <script src="file:///home/rvb/Documents/HackTheClimate/htc/bootstrap/js/bootstrap.min.js"></script>
+    
+    <style type="text/css">
+      body{
+        background-color:#eee;
+      }
+    </style>
+    <script type="text/javascript">
+      //animate, save state, send sms...
+
+      $(document).ready(function(){
+        
+
+        var canPersist = typeof(Storage) !== "undefined";
+        $("form").on('submit',function(e){
+          e.preventDefault();
+          
+        });
+
+        $(".appliances button").on('click',function(){
+          $(this).toggleClass('btn-success');
+        });
+      });
+
+    </script>
+    
+  </body>
+</html>
